@@ -6,6 +6,7 @@ https://material.angular.io/components/button/examples
 https://material.angular.io/components/icon/api
 https://material.io/resources/icons/?style=baseline
 https://material.angular.io/components/badge/api
+https://material.angular.io/components/progress-spinner/examples
 
 
 ===========================================================
