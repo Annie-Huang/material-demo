@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import { MatButtonModule } from '@angular/material';
+import {MatButtonModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const MaterialComponents = [
