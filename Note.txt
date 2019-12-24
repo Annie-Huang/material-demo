@@ -2,6 +2,7 @@ https://www.youtube.com/watch?v=jUfEn032IL8&t=184s
 https://github.com/Annie-Huang/material-demo
 
 https://material.angular.io/guide/getting-started
+https://material.angular.io/components/button/overview
 
 ===========================================================
 
@@ -12,3 +13,4 @@ C:\react\material-demo>ng add @angular/material
 ? Set up HammerJS for gesture recognition? Yes
 ? Set up browser animations for Angular Material? Yes
 
+C:\react\material-demo>ng g m material
