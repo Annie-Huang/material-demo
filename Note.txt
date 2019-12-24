@@ -6,3 +6,9 @@ https://material.angular.io/guide/getting-started
 ===========================================================
 
 C:\react>ng new C:\react\material-demo>ng create
+
+C:\react\material-demo>ng add @angular/material
+? Choose a prebuilt theme name, or "custom" for a custom theme: Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]
+? Set up HammerJS for gesture recognition? Yes
+? Set up browser animations for Angular Material? Yes
+
