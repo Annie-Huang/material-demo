@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import { MatButtonModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-
+const MaterialComponents = [
+    MatButtonModule
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+    imports: [MaterialComponents],
+    exports: [MaterialComponents]
 })
-export class MaterialModule { }
+export class MaterialModule {
+
+}
