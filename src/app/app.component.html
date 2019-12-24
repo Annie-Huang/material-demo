@@ -1,3 +1,18 @@
+<!-- Click outside the sidenav to display the sidenav-content-->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav (opened)="log('Opened')" (closed)="log('Closed')" mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+  <mat-sidenav-content>
+    Main
+    <button (click)="opened = !opened">Toggle Opened</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+    <button (click)="sidenav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-toolbar color="primary" class="navbar">
   <div>Codevolution</div>
   <div>
@@ -85,20 +100,20 @@
 <!-- =========================================================== -->
 <hr>
 
-<div>
+<div class="btn">
   <button mat-button>Click me!</button>
   <button mat-raised-button>Click me!</button>
   <button mat-flat-button>Click me!</button>
   <button mat-stroked-button>Click me!</button>
 </div>
 
-<div>
+<div class="btn">
   <button mat-icon-button>Icon</button>
   <button mat-fab>Fab</button>
   <button mat-mini-fab>Minifab</button>
 </div>
 
-<div>
+<div class="btn">
   <button color="primary" mat-button>Primary</button>
   <button color="accent" mat-button>Accent</button>
   <button color="warn" disableRipple mat-button>Warn</button>

@@ -1,4 +1,4 @@
-button {
+.btn button {
   margin-right: 3rem;
 }
 
@@ -11,4 +11,15 @@ button {
 }
 .navbar span {
   padding-right: 1rem;
+}
+
+mat-sidenav-container {
+  height: 30%;
+}
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+}
+mat-sidenav {
+  background-color: lightcoral;
+  width: 200px;
 }

@@ -16,4 +16,10 @@ export class AppComponent {
             this.showSpinner = false;
         }, 5000);
     }
+
+    opened = false;
+
+    log(state) {
+        console.log(state);
+    }
 }
