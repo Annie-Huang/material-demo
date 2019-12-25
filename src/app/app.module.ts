@@ -14,7 +14,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
         CustomSnackBarComponent,
         DialogExampleComponent
     ],
-    entryComponents: [CustomSnackBarComponent],
+    entryComponents: [CustomSnackBarComponent, DialogExampleComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,

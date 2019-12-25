@@ -24,7 +24,8 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
 } from '@angular/material';
 
 const Material = [
@@ -52,7 +53,8 @@ const Material = [
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
 ];
 
 @NgModule({

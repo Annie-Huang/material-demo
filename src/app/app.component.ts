@@ -2,7 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import {MatSnackBar} from '@angular/material';
+import {MatSnackBar, MatDialog} from '@angular/material';
+import {DialogExampleComponent} from './dialog-example/dialog-example.component';
 
 @Component({
     selector: 'app-root',
@@ -63,7 +64,7 @@ export class AppComponent implements OnInit {
         return day !== 0 && day !== 6;
     }
 
-    constructor(private snackBar: MatSnackBar) {
+    constructor(private snackBar: MatSnackBar, public dialog: MatDialog) {
     }
     openSnackBar(message, action) {
         // duration will make the snackbar disappear after the duration figure setting.
@@ -77,6 +78,13 @@ export class AppComponent implements OnInit {
     }
     openCustomSnackBar() {
         this.snackBar.openFromComponent(CustomSnackBarComponent, {duration: 2000});
+    }
+
+    openDialog() {
+        const dialogRef = this.dialog.open(DialogExampleComponent);
+        dialogRef.afterClosed().subscribe(result => {
+            console.log(`Dialog result: ${result}`);
+        });
     }
 }
 

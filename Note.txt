@@ -26,6 +26,7 @@ https://material.angular.io/components/radio/api
 https://material.angular.io/components/datepicker/api
 https://material.angular.io/components/tooltip/api
 https://material.angular.io/components/snack-bar/api
+https://material.angular.io/components/dialog/api
 
 ===========================================================
 
@@ -37,3 +38,4 @@ C:\react\material-demo>ng add @angular/material
 ? Set up browser animations for Angular Material? Yes
 
 C:\react\material-demo>ng g m material
+C:\react\material-demo>ng g c dialog-example --skipTests
