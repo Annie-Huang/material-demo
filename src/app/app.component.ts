@@ -28,4 +28,15 @@ export class AppComponent {
     }
 
     selectedValue: string;
+
+    options: string[] = ['Angular', 'React', 'Vue'];
+    objectOptions = [
+        {name: 'Angular'},
+        {name: 'AngularMaterial'},
+        {name: 'React'},
+        {name: 'Vue'}
+    ];
+    displayFn(subject) {
+        return subject ? subject.name : undefined;
+    }
 }
