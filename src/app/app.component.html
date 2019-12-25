@@ -1,4 +1,24 @@
 
+<mat-form-field>
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option>None</mat-option>
+    <mat-optgroup label="Web">
+      <mat-option value="angular">Angular</mat-option>
+      <mat-option value="react">React</mat-option>
+      <mat-option value="vue">Vue</mat-option>
+    </mat-optgroup>
+    <mat-optgroup label="Mobile">
+      <mat-option value="ionic">Ionic</mat-option>
+      <mat-option value="reactnative">React Native</mat-option>
+    </mat-optgroup>
+  </mat-select>
+</mat-form-field>
+{{selectedValue}}
+
+<!-- =========================================================== -->
+<hr>
+
 <!-- All input need to have this mat-form-field wrapper -->
 <mat-form-field floatLabel="auto" hideRequiredMarker appearance="legacy">
   <mat-label>Name</mat-label>
@@ -23,6 +43,7 @@
   <input matInput required>
   <mat-hint align="end">Min 5 characters</mat-hint>
 </mat-form-field>
+
 <!-- =========================================================== -->
 <hr>
 
