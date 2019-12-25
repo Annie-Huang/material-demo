@@ -13,6 +13,7 @@ https://material.angular.io/components/menu/api
 https://material.angular.io/components/list/api
 https://material.angular.io/components/divider/api
 https://material.angular.io/components/grid-list/api
+https://material.angular.io/components/expansion/api
 
 ===========================================================
 
