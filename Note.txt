@@ -12,6 +12,7 @@ https://material.angular.io/components/sidenav/api
 https://material.angular.io/components/menu/api
 https://material.angular.io/components/list/api
 https://material.angular.io/components/divider/api
+https://material.angular.io/components/grid-list/api
 
 ===========================================================
 

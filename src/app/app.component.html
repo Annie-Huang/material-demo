@@ -1,3 +1,21 @@
+<!-- Height of the row is by defaul equals to the width of the column
+     2:1 means is width:height
+     fit: fit the height base on the container. and the container is set to be 200px. if we have 4 rows, then each row will be 50 px
+-->
+<!--<mat-grid-list cols="2" rowHeight="100px">-->
+<!--<mat-grid-list cols="2" rowHeight="2:1">-->
+<mat-grid-list cols="2" rowHeight="fit" style="height: 200px" gutterSize="10px">
+<!--  <mat-grid-tile rowspan="2">Tile 1</mat-grid-tile>-->
+<!--  <mat-grid-tile colspan="2">Tile 1</mat-grid-tile>-->
+  <mat-grid-tile>Tile 1</mat-grid-tile>
+  <mat-grid-tile>Tile 2</mat-grid-tile>
+  <mat-grid-tile>Tile 3</mat-grid-tile>
+  <mat-grid-tile>Tile 4</mat-grid-tile>
+</mat-grid-list>
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-list>
   <mat-list-item>
     <mat-icon matListIcon>home</mat-icon>
