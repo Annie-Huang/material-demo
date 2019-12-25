@@ -1,4 +1,18 @@
 
+<!--matTooltipShowDelay and matTooltipHideDelay is used in case user is randomly moving the house on the screen-->
+<button
+  mat-raised-button
+  matTooltip="Welcome to Codevolution"
+  matTooltipPosition="after"
+  matTooltipShowDelay="2000"
+  matTooltipHideDelay="2000"
+>
+  Hello
+</button>
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-form-field>
 <!--  <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate">-->
   <input matInput [matDatepicker]="myDatePicker" [matDatepickerFilter]="dateFilter">
