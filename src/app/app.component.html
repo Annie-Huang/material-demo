@@ -1,4 +1,15 @@
 
+<mat-form-field>
+<!--  <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate">-->
+  <input matInput [matDatepicker]="myDatePicker" [matDatepickerFilter]="dateFilter">
+  <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+<!--  <mat-datepicker #myDatePicker startView="multi-year"></mat-datepicker>-->
+  <mat-datepicker #myDatePicker></mat-datepicker>
+</mat-form-field>
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-radio-group>
   <mat-radio-button value="angular" color="primary">Angular</mat-radio-button>
   <mat-radio-button value="react">React</mat-radio-button>

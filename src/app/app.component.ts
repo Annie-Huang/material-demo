@@ -54,4 +54,11 @@ export class AppComponent implements OnInit {
         const filterValue = value.toLowerCase();
         return this.options.filter(option => option.toLowerCase().includes(filterValue));
     }
+
+    minDate = new Date();
+    maxDate = new Date(2020, 3, 10); // month start from 0
+    dateFilter = date => {
+        const day = date.getDay();
+        return day !== 0 && day !== 6;
+    }
 }
