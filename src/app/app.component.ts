@@ -81,7 +81,7 @@ export class AppComponent implements OnInit {
     }
 
     openDialog() {
-        const dialogRef = this.dialog.open(DialogExampleComponent);
+        const dialogRef = this.dialog.open(DialogExampleComponent, {data: {name: 'Vishwas'}});
         dialogRef.afterClosed().subscribe(result => {
             console.log(`Dialog result: ${result}`);
         });
