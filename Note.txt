@@ -25,6 +25,7 @@ https://material.angular.io/components/checkbox/api
 https://material.angular.io/components/radio/api
 https://material.angular.io/components/datepicker/api
 https://material.angular.io/components/tooltip/api
+https://material.angular.io/components/snack-bar/api
 
 ===========================================================
 

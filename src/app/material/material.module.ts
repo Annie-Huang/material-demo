@@ -23,7 +23,8 @@ import {
     MatRadioModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
 } from '@angular/material';
 
 const Material = [
@@ -50,7 +51,8 @@ const Material = [
     MatRadioModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
 ];
 
 @NgModule({

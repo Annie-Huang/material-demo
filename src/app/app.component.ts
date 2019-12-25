@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
     selector: 'app-root',
@@ -61,4 +62,18 @@ export class AppComponent implements OnInit {
         const day = date.getDay();
         return day !== 0 && day !== 6;
     }
+
+    constructor(private snackBar: MatSnackBar) {
+    }
+    openSnackBar(message, action) {
+        // duration will make the snackbar disappear after the duration figure setting.
+        const snackBarRef = this.snackBar.open(message, action, {duration: 2000});
+        snackBarRef.afterDismissed().subscribe(() => {
+            console.log('The snackbar was dismissed');
+        });
+        snackBarRef.onAction().subscribe(() => {
+            console.log('The snackbar action was tirggered!');
+        });
+    }
 }
+
