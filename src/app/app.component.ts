@@ -75,5 +75,15 @@ export class AppComponent implements OnInit {
             console.log('The snackbar action was tirggered!');
         });
     }
+    openCustomSnackBar() {
+        this.snackBar.openFromComponent(CustomSnackBarComponent, {duration: 2000});
+    }
 }
 
+
+@Component({
+    selector: 'custom-snackbar',
+    template: `<span style="color:orange">Custom Snackbar</span>`
+})
+export class CustomSnackBarComponent {
+}
