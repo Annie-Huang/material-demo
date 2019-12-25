@@ -1,3 +1,33 @@
+<mat-list>
+  <mat-list-item>
+    <mat-icon matListIcon>home</mat-icon>
+    <h3 mat-line>Heading</h3>
+    <p mat-line>Line</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon matListIcon>folder</mat-icon>
+    <h3 mat-line>Heading 2</h3>
+    <p mat-line>Line 2</p>
+  </mat-list-item>
+</mat-list>
+
+<!--<mat-list dense>-->
+<!--  <mat-list-item>Item 1</mat-list-item>-->
+<!--  <mat-list-item>Item 2</mat-list-item>-->
+<!--  <mat-list-item>Item 3</mat-list-item>-->
+<!--</mat-list>-->
+
+<!--<mat-nav-list>-->
+<!--  <a mat-list-item href="#"> Home </a>-->
+<!--  <a mat-list-item href="#"> About </a>-->
+<!--  <a mat-list-item href="#"> Services </a>-->
+<!--</mat-nav-list>-->
+
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
   <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
   <button mat-menu-item>BackEnd</button>
@@ -27,7 +57,7 @@
   Vishwas
 </button>
 <button
-  mat-raised-button 
+  mat-raised-button
   [matMenuTriggerData]="{name: 'Codevolution', hobby: 'teaching'}"
   [matMenuTriggerFor]="lazyMenu"
 >
