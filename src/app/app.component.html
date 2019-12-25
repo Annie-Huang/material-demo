@@ -1,4 +1,40 @@
 
+<!-- linear means you cannot go to the next step without finishing the current step -->
+<mat-horizontal-stepper linear>
+  <mat-step label="Shipping Address" completed=true>
+    <p>Shipping Address Details</p>
+  </mat-step>
+  <mat-step label="Billing Address" completed=false optional>
+    <p>Billing Address Details</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Place Order" completed=false>
+    <p>Order Details</p>
+  </mat-step>
+</mat-horizontal-stepper>
+
+<mat-vertical-stepper linear>
+  <mat-step label="Shipping Address" completed=true>
+    <p>Shipping Address Details</p>
+  </mat-step>
+  <mat-step label="Billing Address" completed=false optional>
+    <p>Billing Address Details</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Place Order" completed=false>
+    <p>Order Details</p>
+  </mat-step>
+</mat-vertical-stepper>
+
+<!-- =========================================================== -->
+<hr>
+
 <mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
   <mat-tab label="Angular">Angular Content</mat-tab>
   <mat-tab label="React">React Content</mat-tab>
