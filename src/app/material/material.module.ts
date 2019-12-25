@@ -18,7 +18,8 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatCheckboxModule
 } from '@angular/material';
 
 const Material = [
@@ -40,7 +41,8 @@ const Material = [
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatCheckboxModule
 ];
 
 @NgModule({

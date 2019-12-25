@@ -21,6 +21,7 @@ https://material.angular.io/components/input/api
 https://material.angular.io/components/form-field/api
 https://material.angular.io/components/select/api
 https://material.angular.io/components/autocomplete/api
+https://material.angular.io/components/checkbox/api
 
 ===========================================================
 
