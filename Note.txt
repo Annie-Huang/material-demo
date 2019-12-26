@@ -27,6 +27,7 @@ https://material.angular.io/components/datepicker/api
 https://material.angular.io/components/tooltip/api
 https://material.angular.io/components/snack-bar/api
 https://material.angular.io/components/dialog/api
+https://material.angular.io/components/table/api
 
 ===========================================================
 
