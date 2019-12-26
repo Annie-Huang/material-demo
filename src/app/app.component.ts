@@ -87,6 +87,9 @@ export class AppComponent implements OnInit {
     }
 
     constructor(private snackBar: MatSnackBar, public dialog: MatDialog) {
+        for (let i = 0; i < 1000; i++) {
+            this.numbers.push(i);
+        }
     }
     openSnackBar(message, action) {
         // duration will make the snackbar disappear after the duration figure setting.
@@ -123,6 +126,8 @@ export class AppComponent implements OnInit {
     applyFilter(filterValue: string) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
     }
+
+    numbers = [];
 }
 
 
