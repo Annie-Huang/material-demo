@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import {MatSnackBar, MatDialog, MatTableDataSource} from '@angular/material';
+import {MatSnackBar, MatDialog, MatTableDataSource, MatSort} from '@angular/material';
 import {DialogExampleComponent} from './dialog-example/dialog-example.component';
 
 export interface PeriodicElement {
@@ -71,6 +71,7 @@ export class AppComponent implements OnInit {
             startWith(''),
             map(value => this._filter(value))
         );
+        this.dataSource.sort = this.sort;
     }
     private _filter(value: string): string[] {
         const filterValue = value.toLowerCase();
@@ -110,6 +111,8 @@ export class AppComponent implements OnInit {
     // matHeaderRowDef control which property to display and what order to display.
     displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
     dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+    @ViewChild(MatSort) sort: MatSort;
 
     logData(row) {
         console.log(row);
