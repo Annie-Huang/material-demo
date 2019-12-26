@@ -2,7 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import {MatSnackBar, MatDialog, MatTableDataSource, MatSort} from '@angular/material';
+import {MatSnackBar, MatDialog, MatTableDataSource, MatSort, MatPaginator} from '@angular/material';
 import {DialogExampleComponent} from './dialog-example/dialog-example.component';
 
 export interface PeriodicElement {
@@ -72,6 +72,7 @@ export class AppComponent implements OnInit {
             map(value => this._filter(value))
         );
         this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
     }
     private _filter(value: string): string[] {
         const filterValue = value.toLowerCase();
@@ -113,6 +114,7 @@ export class AppComponent implements OnInit {
     dataSource = new MatTableDataSource(ELEMENT_DATA);
 
     @ViewChild(MatSort) sort: MatSort;
+    @ViewChild(MatPaginator) paginator: MatPaginator;
 
     logData(row) {
         console.log(row);
