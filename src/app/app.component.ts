@@ -107,8 +107,13 @@ export class AppComponent implements OnInit {
         });
     }
 
+    // matHeaderRowDef control which property to display and what order to display.
     displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
     dataSource = ELEMENT_DATA;
+
+    logData(row) {
+        console.log(row);
+    }
 }
 
 
