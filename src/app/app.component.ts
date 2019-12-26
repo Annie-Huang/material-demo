@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import {MatSnackBar, MatDialog} from '@angular/material';
+import {MatSnackBar, MatDialog, MatTableDataSource} from '@angular/material';
 import {DialogExampleComponent} from './dialog-example/dialog-example.component';
 
 export interface PeriodicElement {
@@ -109,10 +109,14 @@ export class AppComponent implements OnInit {
 
     // matHeaderRowDef control which property to display and what order to display.
     displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-    dataSource = ELEMENT_DATA;
+    dataSource = new MatTableDataSource(ELEMENT_DATA);
 
     logData(row) {
         console.log(row);
+    }
+
+    applyFilter(filterValue: string) {
+        this.dataSource.filter = filterValue.trim().toLowerCase();
     }
 }
 
